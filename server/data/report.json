@@ -1,0 +1,36 @@
+{
+  "features": [
+    "ph",
+    "rainMmH",
+    "soilPct",
+    "waterCm",
+    "levelDeltaCm"
+  ],
+  "labels": [
+    "pH",
+    "Rain",
+    "Soil moisture",
+    "Water height",
+    "Level change"
+  ],
+  "samples": 480,
+  "trainSamples": 384,
+  "testSamples": 96,
+  "holdout": "last 20 percent of each pond condition, in time order",
+  "sklearnMae": 1.031598606590377,
+  "xgboostMae": 1.4047504663467407,
+  "sklearnImportance": [
+    0.17898609939233798,
+    0.02917894851382966,
+    0.11794573761842818,
+    0.6040531925667092,
+    0.069836021908695
+  ],
+  "xgboostImportance": [
+    0.3046026825904846,
+    0.013090291991829872,
+    0.17664115130901337,
+    0.4491632878780365,
+    0.05650252103805542
+  ]
+}

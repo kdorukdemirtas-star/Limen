@@ -1,0 +1,28 @@
+{
+  "name": "Limen",
+  "color": {
+    "bg": { "light": "#e4efe9", "dark": "#172421" },
+    "surface": { "light": "#eef6f2", "dark": "#22302b" },
+    "ink": { "light": "#16332e", "dark": "#e8f4ef" },
+    "inkSoft": { "light": "#244740", "dark": "#c9e2d9" },
+    "accent": { "light": "#1c6558", "dark": "#9ed9cb" },
+    "accentInk": { "light": "#f4fbf8", "dark": "#10211c" },
+    "water": {
+      "calm": { "light": "#3f8f7e", "dark": "#7dcebb" },
+      "watch": { "light": "#a57a32", "dark": "#e2c078" },
+      "nutrient": { "light": "#a85b32", "dark": "#e0a07a" },
+      "bloom": { "light": "#3f7a32", "dark": "#9dcb86" },
+      "acid": { "light": "#7d4d68", "dark": "#e0b3c8" }
+    }
+  },
+  "font": {
+    "display": "Fraunces",
+    "body": "Outfit"
+  },
+  "radius": "22px",
+  "space": [8, 12, 16, 20, 28, 48],
+  "motion": {
+    "press": "120ms ease-out",
+    "water": "500ms ease-out"
+  }
+}
