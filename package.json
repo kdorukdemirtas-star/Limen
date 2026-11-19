@@ -1,0 +1,33 @@
+{
+  "name": "alg",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Pond dashboard for algae and eutrophication, with scikit-learn, XGBoost, and a MiniCPM guide.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "check": "node scripts/check-simulation.ts",
+    "fit": "node scripts/fit-estimate.ts",
+    "train": "node scripts/test-realism.ts && node scripts/export-readings.ts && /Users/doruk/Desktop/Search/akilli-orman-gozlemcisi-software/.aog/mlx/bin/python server/train_models.py",
+    "dashboard": "npm run build && /Users/doruk/Desktop/Search/akilli-orman-gozlemcisi-software/.aog/mlx/bin/python server/dashboard.py",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource/fraunces": "^5.3.0",
+    "@fontsource/outfit": "^5.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "oxlint": "^1.90.0",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.6"
+  }
+}

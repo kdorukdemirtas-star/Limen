@@ -1,0 +1,102 @@
+{
+  "stepMinutes": 10,
+  "samples": 480,
+  "ranges": {
+    "ph": {
+      "min": 5.485415956712691,
+      "max": 9.484485771484874,
+      "mean": 7.347612534110259
+    },
+    "rain": {
+      "min": 0,
+      "max": 17.339096281671637,
+      "mean": 4.139375453147808
+    },
+    "soil": {
+      "min": 34.61384669215998,
+      "max": 84.51708099956599,
+      "mean": 60.547872600401966
+    },
+    "water": {
+      "min": 42.01142966791729,
+      "max": 69.30830902681835,
+      "mean": 54.31582518191011
+    }
+  },
+  "fastest": {
+    "levelCmPerHour": 4.079830196120497,
+    "phPerHour": 0.18961532514486024
+  },
+  "checks": [
+    {
+      "name": "physical bounds",
+      "pass": true,
+      "detail": "pH stays inside 0–14, rain is never negative, soil stays inside 0–100%."
+    },
+    {
+      "name": "pond pH band",
+      "pass": true,
+      "detail": "pH 5.49–9.48. Fresh blooms can reach about 9–10; acid inflow can fall near 5.5."
+    },
+    {
+      "name": "rain band",
+      "pass": true,
+      "detail": "rain 0.0–17.3 mm/h. Heavy rain is about 8–20 mm/h."
+    },
+    {
+      "name": "soil band",
+      "pass": true,
+      "detail": "soil 35–85% on a 0–100 sensor."
+    },
+    {
+      "name": "water band",
+      "pass": true,
+      "detail": "water height 42.0–69.3 cm."
+    },
+    {
+      "name": "level rate",
+      "pass": true,
+      "detail": "fastest water rise is 4.08 cm/hour if each step is 10 minutes. A small basin in heavy rain can rise a few centimetres an hour."
+    },
+    {
+      "name": "pH rate",
+      "pass": true,
+      "detail": "fastest pH change is 0.19 units/hour. A sunny bloom afternoon often moves about 0.1–0.3 units/hour."
+    },
+    {
+      "name": "calm water",
+      "pass": true,
+      "detail": "calm mean pH 7.40."
+    },
+    {
+      "name": "bloom water",
+      "pass": true,
+      "detail": "bloom mean pH 9.37, rain 0.00 mm/h."
+    },
+    {
+      "name": "acid water",
+      "pass": true,
+      "detail": "acid mean pH 5.66."
+    },
+    {
+      "name": "runoff water",
+      "pass": true,
+      "detail": "runoff rain 13.0 mm/h, soil 79%."
+    },
+    {
+      "name": "scores separate",
+      "pass": true,
+      "detail": "calm 6, runoff 71, bloom 92."
+    },
+    {
+      "name": "score not stuck at the ceiling",
+      "pass": true,
+      "detail": "3.5% of readings sit on 100."
+    },
+    {
+      "name": "labels match the water",
+      "pass": true,
+      "detail": "bloom label 100%, acid label 100%."
+    }
+  ]
+}
